@@ -1,0 +1,39 @@
+{
+  "name": "@stdlib/math-base-special-signumf",
+  "version": "0.0.0",
+  "description": "Evaluate the signum function for a single-precision floating-point number.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-special-signumf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "math.sign",
+    "signum",
+    "sign",
+    "value",
+    "number",
+    "special function",
+    "special",
+    "function",
+    "float32",
+    "float",
+    "single-precision",
+    "f32",
+    "flt"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
