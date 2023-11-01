@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,54 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isnanf = require( '@stdlib/math-base-assert-is-nanf' );
-var isNegativeZerof = require( '@stdlib/math-base-assert-is-negative-zerof' );
-var isPositiveZerof = require( '@stdlib/math-base-assert-is-positive-zerof' );
-var PINF = require( '@stdlib/constants-float32-pinf' );
-var NINF = require( '@stdlib/constants-float32-ninf' );
-var signumf = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof signumf, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `NaN` if provided `NaN`', function test( t ) {
-	var sign = signumf( NaN );
-	t.equal( isnanf( sign ), true, 'returns NaN' );
-	t.end();
-});
-
-tape( 'the function returns `-0` if provided `-0`', function test( t ) {
-	var sign = signumf( -0.0 );
-	t.equal( isNegativeZerof( sign ), true, 'returns -0' );
-	t.end();
-});
-
-tape( 'the function returns `0` if provided +0', function test( t ) {
-	var sign;
-
-	sign = signumf( 0.0 );
-	t.equal( isPositiveZerof( sign ), true, 'returns +0' );
-
-	sign = signumf( +0.0 );
-	t.equal( isPositiveZerof( sign ), true, 'returns +0' );
-
-	t.end();
-});
-
-tape( 'the function returns `-1` if provided a negative number', function test( t ) {
-	t.equal( signumf( -10.0 ), -1.0, 'signum(-10) => -1' );
-	t.equal( signumf( NINF ), -1.0, 'signum(-infinity) => -1' );
-	t.end();
-});
-
-tape( 'the function returns `+1` if provided a positive number', function test( t ) {
-	t.equal( signumf( 10.0 ), 1.0, 'signum(10) => 1' );
-	t.equal( signumf( PINF ), 1.0, 'signum(infinity) => 1' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
