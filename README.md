@@ -65,7 +65,7 @@ for any real number `x`.
 ## Usage
 
 ```javascript
-import signumf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-signumf@esm/index.mjs';
+import signumf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-signumf@v0.2.0-esm/index.mjs';
 ```
 
 #### signumf( x )
@@ -125,7 +125,7 @@ Table of results:
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
-import signumf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-signumf@esm/index.mjs';
+import signumf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-signumf@v0.2.0-esm/index.mjs';
 
 var sign;
 var x;
