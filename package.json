@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-signumf",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Evaluate the signum function for a single-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
@@ -41,11 +41,11 @@
   },
   "dependencies": {
     "@stdlib/math-base-assert-is-nanf": "^0.2.2",
-    "@stdlib/math-base-napi-unary": "^0.2.4",
+    "@stdlib/math-base-napi-unary": "^0.2.7",
     "@stdlib/utils-library-manifest": "^0.2.3"
   },
   "devDependencies": {
-    "@stdlib/console-log-each-map": "github:stdlib-js/console-log-each-map#main",
+    "@stdlib/console-log-each-map": "^0.1.0",
     "@stdlib/constants-float32-ninf": "^0.2.2",
     "@stdlib/constants-float32-pinf": "^0.2.2",
     "@stdlib/math-base-assert-is-negative-zerof": "^0.1.3",
